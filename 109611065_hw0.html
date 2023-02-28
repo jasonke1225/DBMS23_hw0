@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DBMS-hw0</title>
+	<meta name="author" content="Your ID">
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background-color: #f7f7f7; 
+			color: #333;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		
+		h1 {
+			font-size: 32px;
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+		
+		table {
+			border-collapse: collapse;
+			border: 3px solid #333;
+			width: 100%;
+			max-width: 800px;
+			margin: auto;
+			background-color: #fff;
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+            margin-bottom: 20px;
+		}
+		
+		th, td {
+			padding: 10px;
+			border: 1px solid #333;
+			word-wrap: break-word;
+			text-align: center;
+		}
+		
+		th {
+			background-color: #333;
+			color: #fff;
+		}
+		
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+	<div>
+        <p id="toggle1">Please fill in the following table.</p>
+		<table>
+			<tr>
+				<th colspan="4" style="font-size: 30px;">DBMS-hw0</th>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<td>周文荏</td> <!--Your Name-->
+				<th>Student ID</th>
+				<td>109611065</td> <!--Your ID number-->
+			</tr>
+			<tr>
+				<th>Expectation</th>
+				<td colspan="3">My expectation for myself after taking this course is to learn principles of database and utilize the knowledge I have learned in class for further applications.</td> <!--Write down your expectations for this class.-->
+			</tr>
+			<tr>
+				<th>MySQL screenshot</th>
+				<td colspan="3"><img src="109611065_hw0.png" alt="MySQL screenshot"> </td> <!--Change to your image file name.-->
+			</tr>
+		</table>
+		<p id="toggle2"><b><font color="red">You can use your own design instead.</font></b></p>
+        <button id="toggleButton" onclick="toggleText()">Hide Descriptions</button>
+	</div>
+	<script>
+      function toggleText() {
+        var text1 = document.getElementById("toggle1");
+        var text2 = document.getElementById("toggle2");
+        var button = document.getElementById("toggleButton");
+        if (text1.style.display === "none") {
+          text1.style.display = "block";
+          text2.style.display = "block";
+          button.innerHTML = "Hide Descriptions";
+        } else {
+          text1.style.display = "none";
+          text2.style.display = "none";
+          button.innerHTML = "Show Descriptions";
+        }
+      }
+    </script>
+</body>
+</html>
+
